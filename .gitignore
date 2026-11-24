@@ -1,5 +1,9 @@
-@"
 *.json
 *.xml
 __pycache__/
-"@ | Out-File -FilePath .gitignore -Encoding utf8
+
+# 本目录同时是本地安装态的 skill 根目录，根级文件不进仓库
+# 仓库内维护的正式版本在 paper-interpreter/ 子目录
+/SKILL.md
+/references/
+/使用指南.md
